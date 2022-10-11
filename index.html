@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+	<!-- Llamado a libreria jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<title>JQuery Practices</title>
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#lista").hide();
+			$("#oc").hide();
+		  	$("#mo").click(function(){
+		    	$("#mo").hide();
+		    	$("#oc").show();
+		    	$("#lista").show();
+		  	});
+		  	$("#oc").click(function(){
+		  	  	$("#oc").hide();
+		  	  	$("#mo").show();
+		  	  	$("#lista").hide();
+		  		});
+		});
+
+	</script>
+
+</head>
+
+<body>
+	<center><h1>Practicando con JQuery <hr></h1>
+	<div>
+		<p>Párrafo 1</p>
+		<br>
+		<button type="button" id="mo" class="btn btn-success btn-md">Mostrar tabla</button>
+		<button type="button" id="oc" class="btn btn-warning btn-md">Ocultar Tabla</button>
+		<br>
+
+	</div>
+	</center>
+	<div id="lista">
+		<ol>
+			<li>a</li>
+			<li>b</li>
+			<li>c</li>
+			<li>d</li>
+			<li>e</li>
+			<li>f</li>
+		</ol>
+	</div>
+</body>
+
+</html>
